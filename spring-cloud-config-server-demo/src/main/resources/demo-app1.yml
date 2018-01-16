@@ -1,0 +1,4 @@
+# Local YAML file which will provide application configuration values
+
+name: demo-app1
+description: demo-app1 with yml config
