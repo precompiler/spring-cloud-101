@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  # By default every Eureka server is also a Eureka client and requires (at least one) service URL to locate a peer.
+  # If you don’t provide it the service will run and work,
+  # but it will shower your logs with a lot of noise about not being able to register with the peer.
+  # switch off client side behaviour
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
