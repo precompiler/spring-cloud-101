@@ -5,3 +5,5 @@ info:
   app:
     java:
       target: @java.version@
+server:
+  port: 8088
